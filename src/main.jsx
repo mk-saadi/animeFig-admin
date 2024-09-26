@@ -7,6 +7,8 @@ import Login from "./pages/Login";
 import Layout from "./pages/Layout";
 import AddFigures from "./pages/AddFigures";
 import { ToastProvider } from "react-toast-master";
+import EditFigures from "./pages/EditFigures";
+import Home from "./pages/Home";
 
 const router = createBrowserRouter([
 	{
@@ -14,8 +16,16 @@ const router = createBrowserRouter([
 		element: <Layout />,
 		children: [
 			{
+				path: "/home/home-page",
+				element: <Home />,
+			},
+			{
 				path: "/home/addFigures",
 				element: <AddFigures />,
+			},
+			{
+				path: "/home/editFigures",
+				element: <EditFigures />,
 			},
 		],
 	},

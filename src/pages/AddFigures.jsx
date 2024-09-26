@@ -125,7 +125,7 @@ const AddFigures = () => {
 	};
 
 	return (
-		<div className="bg-black">
+		<div className="">
 			<form
 				onSubmit={handlePost}
 				className="px-1 "
@@ -331,7 +331,7 @@ const AddFigures = () => {
 					</div>
 					<input
 						type="submit"
-						className={`absolute text-white rounded-sm bottom-4 md:right-24 bg-blue-500`}
+						className={`absolute text-white rounded-sm p-2 hover:scale-105 duration-300 bottom-4 md:right-24 dark:bg-blue-500`}
 						disabled={loading}
 						value="Submit"
 					/>

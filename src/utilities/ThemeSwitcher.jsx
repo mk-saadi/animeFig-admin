@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Sun, Moon } from "lucide-react";
 
 const ThemeSwitcher = () => {
 	const [theme, setTheme] = useState(null);
@@ -26,9 +27,9 @@ const ThemeSwitcher = () => {
 	return (
 		<button
 			onClick={handleThemeSwitch}
-			className="p-2 text-gray-800 bg-gray-200 border rounded dark:bg-gray-800 dark:text-gray-200"
+			className="p-2 text-gray-800 duration-300 bg-gray-200 border rounded dark:bg-gray-800 dark:text-gray-200"
 		>
-			Switch to {theme === "dark" ? "Light" : "Dark"} Mode
+			{theme === "dark" ? <Moon /> : <Sun />}
 		</button>
 	);
 };
